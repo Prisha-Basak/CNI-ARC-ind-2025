@@ -106,10 +106,10 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 Now use your keyboard:
 
-_ i → forward _
-_ k → stop _
-_ j → turn left _
-_ l → turn right _
+*i → forward*
+*k → stop*
+*j → turn left*
+*l → turn right*
 
 ---
 
