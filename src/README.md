@@ -18,7 +18,9 @@ ROS GUI applications (like turtlesim and rviz2) need an X server to render windo
 
 Run the following in a macOS terminal:
 
-` xhost + 127.0.0.1 `
+```
+xhost + 127.0.0.1
+```
 
 This grants Docker containers permission to render GUI windows via XQuartz.
 
@@ -58,7 +60,9 @@ This includes:
 ### 4. Build the Container ###
 
 From your repo folder:
-`docker build -t ros2-humble-gazebo .`
+```
+docker build -t ros2-humble-gazebo .
+```
 
 ### 5. Run the Container ###
 
@@ -80,7 +84,9 @@ docker run -it \
 
 Inside the container:
 
-`ros2 run turtlesim turtlesim_node`
+```
+ros2 run turtlesim turtlesim_node
+```
 
 A turtle window should appear through XQuartz. 🐢
 
@@ -88,18 +94,22 @@ A turtle window should appear through XQuartz. 🐢
 
 Open another terminal (new shell into the same container):
 
-`docker exec -it <container_id> bash`
+```
+docker exec -it <container_id> bash
+```
 
 Then run:
 
-`ros2 run teleop_twist_keyboard teleop_twist_keyboard`
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
 
 Now use your keyboard:
 
-* i → forward *
-* k → stop *
-* j → turn left *
-* l → turn right *
+_ i → forward _
+_ k → stop _
+_ j → turn left _
+_ l → turn right _
 
 ---
 
